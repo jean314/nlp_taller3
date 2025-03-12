@@ -35,7 +35,7 @@ Esta aplicación se puede ejecutar fácilmente en un contenedor Docker. Sigue es
 3. **Ejecutar el contenedor:**  
 Una vez que la imagen se ha construido correctamente, ejecuta el contenedor mapeando el puerto 5555 del contenedor al puerto 5555 de tu máquina:
    ```bash
-docker run -p 5555:5555 flask-transformers-app
+	docker run -p 5555:5555 flask-transformers-app
 
 4. **Verificar la aplicación:**  
 Abre tu navegador web y visita http://localhost:5555 para comprobar que la aplicación se esté ejecutando correctamente.
