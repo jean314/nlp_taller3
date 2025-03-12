@@ -39,3 +39,8 @@ Una vez que la imagen se ha construido correctamente, ejecuta el contenedor mape
 
 4. **Verificar la aplicación:**  
 Abre tu navegador web y visita http://localhost:5555 para comprobar que la aplicación se esté ejecutando correctamente.
+
+5. **Llamada al servicio REST**  
+Se puede ejecutar el siguiente comando para llamar directamente al servicio en lugar de ingresar a la página web
+   ```bash
+	curl -X POST "http://localhost:5555/translate" -H "Content-Type: application/json" -d '{"text": "The product is functional, but it does not stand out in any way. It does what it is supposed to do without any issues."}'
