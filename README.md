@@ -18,9 +18,24 @@ Este proyecto implementa un servicio web de traducción que convierte textos en 
 
 ## Instalación y Uso
 
-### Ejecución con Docker
+## Ejecución con Docker
 
-1. **Construir la imagen Docker:**
+Esta aplicación se puede ejecutar fácilmente en un contenedor Docker. Sigue estos pasos:
 
+1. **Instalación de Docker:**  
+   Asegúrate de tener Docker instalado en tu sistema.
+   - En macOS o Windows, descarga e instala [Docker Desktop](https://www.docker.com/products/docker-desktop).
+   - En Linux, sigue las [instrucciones oficiales de instalación de Docker](https://docs.docker.com/engine/install/).
+
+2. **Construir la imagen Docker:**  
+   Abre una terminal en el directorio del proyecto (donde se encuentra el `Dockerfile`) y ejecuta el siguiente comando para construir la imagen con el tag `flask-transformers-app`:
    ```bash
-   docker build -t servicio-traduccion .
+   docker build -t flask-transformers-app .
+
+3. **Ejecutar el contenedor:**  
+Una vez que la imagen se ha construido correctamente, ejecuta el contenedor mapeando el puerto 5555 del contenedor al puerto 5555 de tu máquina:
+   ```bash
+docker run -p 5555:5555 flask-transformers-app
+
+4. **Verificar la aplicación:**  
+Abre tu navegador web y visita http://localhost:5555 para comprobar que la aplicación se esté ejecutando correctamente.
